@@ -8,7 +8,7 @@ mongoose.connect('mongodb://rfrfth:thmanangerfrf@cluster0-shard-00-00.8mvvl.mong
 }).then(() => {
   console.log('Connected to MongoDB');
 }).catch((error) => {
-  console.error('Error connecting to MongoDB:', error);
+  console.error('Error connecting to MongoDatabase : ', error);
 });
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
